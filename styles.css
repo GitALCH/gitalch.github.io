@@ -1,0 +1,22 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: limegreen;
+    text-decoration: underline;
+}
+
+nav {
+    list-style: none;
+    text-align: center;
+}
+
+nav > ul > li {
+    display: inline;
+}
+
+#contact > ul, #projects > ul {
+    list-style: none;
+}
