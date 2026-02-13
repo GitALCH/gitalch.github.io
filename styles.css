@@ -4,19 +4,80 @@ a {
 }
 
 a:hover {
-    color: limegreen;
+    color: lime;
     text-decoration: underline;
+    border: 1px lime solid;
 }
 
 nav {
     list-style: none;
     text-align: center;
+    border-bottom: 2px lime solid;
+    border-top: 2px lime solid;
+    padding-top: 15px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+header {
+    padding: 25px;
+}
+
+header > h1:hover {
+    animation: rainbow;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
 }
 
 nav > ul > li {
     display: inline;
+    margin: 2px;
 }
 
-#contact > ul, #projects > ul {
+#contact > ul {
     list-style: none;
+}
+
+#about > h3, #education > h3, #skills > h3, #projects > h3, #resume > h3, #contact > h3{
+    border-bottom: 2px lime solid;
+    padding-top: 15px;
+    border-radius: 2px;
+}
+
+@keyframes rainbow{
+    0% {
+        color: red;
+    }
+    10% {
+        color: orange;
+    }
+    20% {
+        color: yellow;
+    }
+    30% {
+        color: green;
+    }
+    40% {
+        color: blue;
+    }
+    50% {
+        color: purple;
+    }
+    60% {
+        color: blue;
+    }
+    70% {
+        color: green;
+    }
+    80% {
+        color:yellow;
+    }
+    90% {
+        color:orange;
+    }
+    100% {
+        color: red;
+    }
 }

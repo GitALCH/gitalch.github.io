@@ -6,10 +6,10 @@
    <link href="styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitALCH Portfolio</title>
+    <title>Alex Lefebvre's Portfolio</title>
 </head>
 <body data-bs-theme="dark">
-    <header class="container d-flex align-items-center justify-content-center">
+    <header class="container">
         <h1>Alex Lefebvre's Portfolio</h1>
     </header>
     <nav>
@@ -22,27 +22,55 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <div class="container d-flex align-items-center justify-content-center" id="about">
-        <h3>About me</h3>
+    <div class="container-fluid">
+        <div class="row" id="about">
+            <h3>About Me</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-6" id="education">
+                <h3>Education</h3>
+            </div>
+            <div class="col-lg-6" id="skills">
+                <h3>Skills</h3>
+                <p>Front End Development: HTML/CSS, Javascript, Bootstrap</p>
+                <p>Back End Development: PHP, Java, C#, Bash</p>
+                <p>App Development: Java, C#, Python</p>
+                <p>Database: SQL, SQL Server, MySQL</p>
+                <p>Software Unit Testing / Planning</p>
+                <p>Version Control: Git, GitHub</p>
+                <p>Operating System: Windows, Linux</p>
+            </div>
+        </div>
     </div>
-    <div class="container d-flex align-items-center justify-content-center" id="education">
-        <h3>Education</h3>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center" id="skills">
-        <h3>Skills</h3>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center" id="projects">
+    <div class="container-fluid" id="projects">
         <h3>Projects</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>Example Project</h5>
+                <p>What it is here</p>
+                <p>Link Here</p>
+            </div>
+            <div class="col-lg-6">
+                <h5>Example Project</h5>
+                <p>What it is here</p>
+                <p>Link Here</p>
+            </div>
+        </div>
     </div>
-    <div class="container d-flex align-items-center justify-content-center" id="resume">
-        <h3>Resume</h3>
-    </div>
-    <div class="container d-flex align-items-center justify-content-center" id="contact">
-        <h3>Contact Information</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/alex-lefebvre22/">Linkedin</a></li>
-            <li><a href="https://github.com/GitALCH">GitHub</a></li>
-        </ul>
+    <div class="container-fluid">
+        <div class="row"  id="resume">
+            <h3>Resume</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, atque minus aperiam ab placeat quo temporibus. Iste, sunt in. Harum veniam cum illum est, accusantium neque repellat mollitia fugit tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, delectus quaerat, maiores fugiat fugit in odit earum rem quas aperiam odio libero veritatis alias praesentium accusamus ab omnis eaque provident!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus voluptatibus quam itaque ullam laudantium commodi, aliquam quae obcaecati tempore atque quas a provident modi debitis voluptates perferendis neque quod non!</p>
+        </div>
+        <div class="row" id="contact">
+            <h3>Contact Information</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/alex-lefebvre22/">Linkedin</a></li>
+                <li><a href="https://github.com/GitALCH">GitHub</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
