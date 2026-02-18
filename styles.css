@@ -1,12 +1,14 @@
 a {
     color: white;
     text-decoration: none;
+    border: white 2px solid;
+    margin: 2px;
+    padding: 5px;
 }
 
 a:hover {
     color: lime;
-    text-decoration: underline;
-    border: 1px lime solid;
+    border: 3px lime solid;
 }
 
 nav {
