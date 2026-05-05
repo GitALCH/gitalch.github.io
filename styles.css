@@ -26,13 +26,6 @@ header {
     padding: 25px;
 }
 
-header > h1:hover {
-    animation: rainbow;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
-}
-
 nav > ul > li {
     display: inline;
     margin: 2px;
@@ -46,42 +39,6 @@ nav > ul > li {
     border-bottom: 2px lime solid;
     padding-top: 15px;
     border-radius: 2px;
-}
-
-@keyframes rainbow{
-    0% {
-        color: red;
-    }
-    10% {
-        color: orange;
-    }
-    20% {
-        color: yellow;
-    }
-    30% {
-        color: green;
-    }
-    40% {
-        color: blue;
-    }
-    50% {
-        color: purple;
-    }
-    60% {
-        color: blue;
-    }
-    70% {
-        color: green;
-    }
-    80% {
-        color:yellow;
-    }
-    90% {
-        color:orange;
-    }
-    100% {
-        color: red;
-    }
 }
 
 .webring-logo {
