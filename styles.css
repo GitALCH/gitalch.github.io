@@ -1,4 +1,4 @@
-a {
+a, .button {
     color: white;
     text-decoration: none;
     border: white 2px solid;
@@ -6,7 +6,7 @@ a {
     padding: 5px;
 }
 
-a:hover {
+a:hover, .button:hover {
     color: lime;
     border: 3px lime solid;
 }
@@ -35,12 +35,18 @@ nav > ul > li {
     list-style: none;
 }
 
-#about > h3, #education > h3, #skills > h3, #projects > h3, #resume > h3, #contact > h3{
+#about > h3, #education > h3, #skills > h3, #projects > h3, #resume > h3, #contact > h3 {
     border-bottom: 2px lime solid;
     padding-top: 15px;
     border-radius: 2px;
 }
 
+.projects {
+    text-align: center;
+}
+
+
+/*Everything below is for the webring*/
 .webring-logo {
   width: 60px;
   height: 60px;

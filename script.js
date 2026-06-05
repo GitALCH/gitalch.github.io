@@ -1,63 +1,36 @@
-let frontEnd;
-let backEnd;
-let appDev;
-let dataBase;
-let testing;
-let versionControl;
-let os;
+let languages;
+let database;
 let frameWorks;
-let skillOutput;
-let skillOutputTitle;
+let systems;
 
+/**
+ * Sets everything to link to the document
+ */
 window.addEventListener("load", () => {
-    let front = document.getElementById("frontEnd");
-    let back = document.getElementById("backEnd");
-    let app = document.getElementById("appDev");
+    let lang = document.getElementById("languages");
     let data = document.getElementById("database");
-    let test = document.getElementById("testing");
-    let version = document.getElementById("versionControl");
-    let operating = document.getElementById("os");
     let frame =  document.getElementById("frameWorks");
+    let sys = document.getElementById("systems");
     skillOutput = document.getElementById("skillsOutput");
     skillOutputTitle = document.getElementById("skillsOutputTitle");
-    front.addEventListener("click", () => {
+    lang.addEventListener("click", () => {
         set();
-        outPut(frontEnd);
-        set();
-    });
-    back.addEventListener("click", () => {
-        set();
-        outPut(backEnd);
-        set();
-    });
-    app.addEventListener("click", () => {
-        set();
-        outPut(appDev);
+        outPut(languages);
         set();
     });
     data.addEventListener("click", () => {
         set();
-        outPut(dataBase);
-        set();
-    });
-    test.addEventListener("click", () => {
-        set();
-        outPut(testing);
-        set();
-    });
-    version.addEventListener("click", () => {
-        set();
-        outPut(versionControl);
-        set();
-    });
-    operating.addEventListener("click", () => {
-        set();
-        outPut(os);
+        outPut(database);
         set();
     });
     frame.addEventListener("click", () => {
         set();
         outPut(frameWorks);
+        set();
+    });
+    sys.addEventListener("click", () => {
+        set();
+        outPut(systems);
         set();
     });
 });
@@ -67,13 +40,12 @@ function outPut(skill) {
     skillOutput.innerHTML = skill;
 }
 
+/**
+ * Order for set is whatever is inside description is first, then the last item is the title
+ */
 function set() {
-    frontEnd = ["HTML/CSS", " Javascript", "Front End"];
-    backEnd = ["PHP", " Java", " C#", " Bash", "Back End"];
-    appDev = ["Java", " C#", " Python", "App Development"];
-    dataBase = ["SQL", " Microsoft SQL Server", " MySQL", "Database"];
-    testing = ["Software Unit Testing / Planning"];
-    versionControl = ["Git", " GitHub", "Version Control"];
-    os = ["Linux", " Windows", "Operating Systems"];
+    languages = ["HTML/CSS", " Javascript", "PHP", "Java", "C#", "Python", "Bash", "Programming Languages"];
+    database = ["SQL", " Microsoft SQL Server", " MySQL", "Database"];
     frameWorks = ["Bootstrap", " React", " Nodejs", "Frameworks"];
+    systems = ["Software Unit Testing / Planning", "Git", "GitHub", "Linux", "Windows", "Systems and Tools"];
 }
